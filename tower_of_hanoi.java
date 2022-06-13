@@ -4,17 +4,17 @@ public class tower_of_hanoi{
     
     public static void towerOfHanoi(int n, int a, int b, int c){
         
-        if(n==2){
-            System.out.println(1+"["+ a + " -> " +b+"]");
-            System.out.println(2+"["+ a + " -> " +b+"]");
-            System.out.println(1+"["+ a + " -> " +b+"]");
+        if(n==0){
+            // System.out.println(1+"["+ a + " -> " +b+"]");
+            // System.out.println(2+"["+ a + " -> " +b+"]");
+            // System.out.println(1+"["+ a + " -> " +b+"]");
             return;
         }
         //pre area - nothing
         towerOfHanoi(n-1,a,c,b);
         //inn area
         
-        System.out.println(n+"["+ a + " -> " +b+"]");
+        System.out.println(n+"["+ a + " -> " + b +"]");
         
         towerOfHanoi(n-1,c,b,a);
         //post area - nothing
