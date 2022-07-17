@@ -1,4 +1,4 @@
-import java.io.*;
+// import java.io.*;
 import java.util.*;
 
 public class rough {
@@ -13,19 +13,20 @@ public class rough {
         }
         int x = scn.nextInt();
         scn.close();
-        int ans = firstIndex(arr, 0, x);
+        int ans = lastIndex(arr, n - 1, x);
         System.out.println(ans);
     }
 
-    public static int firstIndex(int[] arr, int idx, int x) {
-        if (idx < arr.length && arr[idx] == x) {
-            return idx;
-        } else if (idx >= arr.length) {
+    public static int lastIndex(int[] arr, int idx, int x) {
+        if (idx > 0 && arr[idx] == x) {
+            return x;
+        } else if (idx < 0) {
             return -1;
         }
 
-        int ans = firstIndex(arr, ++idx, x);
+        int ans = lastIndex(arr, --idx, x);
         return ans;
     }
+    // problem in this code is the last call is of first index hence it will be returned: i guess abhi toh
 
 }
