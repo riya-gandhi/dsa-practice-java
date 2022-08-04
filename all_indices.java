@@ -3,6 +3,10 @@ import java.io.*;
 
 public class all_indices {
 
+    // problems encountered here : array size is definite and we dont know the frequency of key
+    // going upwards we are counting the frequency of key in arr
+    // going downwards we are filling our answer arr
+
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
@@ -24,18 +28,18 @@ public class all_indices {
         }
     }
 
-    public static int[] allIndices(int[] arr, int x, int idx, int fsf) {
+    public static int[] allIndices(int[] arr, int x, int idx, int foundSoFar) {
         // write ur code here
         if (idx == arr.length) {
-            return new int[fsf];
+            return new int[foundSoFar];
         }
         if (arr[idx] == x) {
 
-            int[] ans = allIndices(arr, x, idx + 1, fsf + 1);
-            ans[fsf] = idx;
+            int[] ans = allIndices(arr, x, idx + 1, foundSoFar + 1);
+            ans[foundSoFar] = idx;
             return ans;
         } else {
-            int[] ans = allIndices(arr, x, idx + 1, fsf);
+            int[] ans = allIndices(arr, x, idx + 1, foundSoFar);
             return ans;
         }
     }
