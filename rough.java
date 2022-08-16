@@ -1,46 +1,23 @@
-import java.io.*;
 import java.util.*;
 
-public class rough {
+public class Main {
 
     public static void main(String[] args) {
+
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
-        int m = scn.nextInt();
-        int[][] arr = new int[n][m];
+        int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                arr[i][j] = scn.nextInt();
-            }
+            arr[i] = scn.nextInt();
         }
-        boolean[][] visitarr = new boolean[n][m];
-        floodfill(arr, 0, 0, "", visitarr);
+        int target = scn.nextInt();
+        scn.close();
+
+        tss(arr, 0, "", target);
+
     }
 
-    // asf -> answer so far
-    public static void floodfill(int[][] maze, int sr, int sc, String asf, boolean[][] visited) {
-
-        if (sr > maze.length - 1 || sc > maze[0].length - 1 || sr < 0 || sc < 0) {
-            return;
-        }
-
-        if (maze[sr][sc] == 1 || visited[sr][sc] == true) {
-            return;
-        }
-
-        if (sr == maze.length - 1 && sc == maze[0].length - 1) {
-            System.out.println(asf);
-            return;
-        }
-
-        visited[sr][sc] = true;
-
-        floodfill(maze, sr + 1, sc, asf + "d", visited);
-        floodfill(maze, sr, sc + 1, asf + "r", visited);
-        floodfill(maze, sr - 1, sc, asf + "t", visited);
-        floodfill(maze, sr, sc - 1, asf + "l", visited);
-
-        visited[sr][sc] = false;
+    public static void tss(int[] arr, int idx, String psf, int target) {
 
     }
 }

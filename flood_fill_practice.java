@@ -1,7 +1,7 @@
-import java.io.*;
+// import java.io.*;
 import java.util.*;
 
-public class Main {
+public class flood_fill_practice {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
