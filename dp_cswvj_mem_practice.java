@@ -19,13 +19,13 @@ public class dp_cswvj_mem_practice {
     static int cs(int n,int idx,int[] arr){
         
         if(idx==n){
-            return 1;
+            return 1; // check if same ans for going from 0 to n >> n to 0
         }
         
         int paths = 0;
         
-        for(int i=1;i<=arr[idx];i++){
-            if(idx+i<=n){
+        for(int i=1;i<=arr[idx];i++){ // this condition was wrong by me
+            if(idx+i<=n){               // this condition was wrong by me
                 paths += cs(n,idx+i,arr);
             }
             
