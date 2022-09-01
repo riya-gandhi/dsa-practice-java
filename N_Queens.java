@@ -22,9 +22,9 @@ public class N_Queens {
         }
         
         for(int i=1;i<=arr[0].length;i++){
-            arr[row][i-1] = 1;
+            // arr[row][i-1] = 1;
             printNQueens(arr,qsf+row+"-"+i+", ",row+1);
-            arr[row][i-1] = 0;
+            // arr[row][i-1] = 0;
         }
     }
 }
