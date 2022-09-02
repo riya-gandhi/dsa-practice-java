@@ -1,8 +1,8 @@
-import java.io.*;
+// import java.io.*;
 
 import java.util.*;
 
-public class Main {
+public class dp_min_cost_maze_rough {
     public static void main(String[] args) throws Exception {
 
         Scanner scn = new Scanner(System.in);
@@ -14,7 +14,7 @@ public class Main {
                 arr[i][j] = scn.nextInt();
             }
         }
-
+        scn.close();
         int[][] dp = new int[n][m]; // 2
         for (int i = n - 1; i >= 0; i--) { // 3
             for (int j = m - 1; j >= 0; j--) { // 4

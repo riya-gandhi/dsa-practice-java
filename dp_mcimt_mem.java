@@ -24,30 +24,18 @@ public class dp_mcimt_mem {
 
     public static int mcimt(int sr, int sc, int dr, int dc, int[][] arr, int cost) {
 
-        // if(sr>dr||sc>dc){
-        // return 0;
-        // }
+        if(sr>dr||sc>dc){
+            return Integer.MAX_VALUE;
+        }
 
-        if (sr == dr && sc == dc) {
+        else if (sr == dr && sc == dc) {
             return cost + arr[dr][dc];
         }
 
-        int mincost = Integer.MAX_VALUE;
-        int costh = 0;
-        int costv = 0;
+        int costh = mcimt(sr, sc + 1, dr, dc, arr, cost);
+        int costv = mcimt(sr + 1, sc, dr, dc, arr, cost);
 
-        if (sc + 1 <= dc) {
-            costh = mcimt(sr, sc + 1, dr, dc, arr, cost + arr[sr][sc + 1]);
-        }
-        if (sr + 1 <= dr) {
-            costv = mcimt(sr + 1, sc, dr, dc, arr, cost + arr[sr + 1][sc]);
-        }
-
-        int totalRecursionCost = costh + costv;
-
-        if (totalRecursionCost < mincost) {
-            mincost = totalRecursionCost;
-        }
+        int mincost = arr[sr][sc]+ Math.min(costh,costv);
 
         return mincost;
     }
