@@ -31,9 +31,12 @@ public class dp_target_sum_subset {
         }
 
         boolean include = tss(idx + 1, arr, tar, ssf + arr[idx]);
+        if (include == true) {
+            return true;
+        }
         boolean notinclude = tss(idx + 1, arr, tar, ssf);
 
-        if (include == true || notinclude == true) {
+        if (notinclude == true) {
             return true;
         }
 
