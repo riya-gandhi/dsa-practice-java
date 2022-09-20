@@ -1,7 +1,8 @@
+
 // import java.io.*;
 import java.util.*;
 
-public class dp_coin_change_permutation {
+public class dp_coin_change_combination {
 
     public static void main(String[] args) throws Exception {
 
@@ -21,25 +22,8 @@ public class dp_coin_change_permutation {
     }
 
     public static int ccc(int[] arr, int tar, int[] dp) {
-
-        if (tar <= 0) {
-            if (tar == 0) {
-                return 1;
-            } else
-                return 0;
-        }
-        if (dp[tar] != 0) {
-            return dp[tar];
-        }
-
-        int ans = 0;
-        for (int i = 0; i < arr.length; i++) {
-            int rres = ccc(arr, tar - arr[i], dp);
-            ans += rres;
-        }
-        dp[tar] = ans;
-
-        return ans;
+        return 0;
+        
     }
 
 }
