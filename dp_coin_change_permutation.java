@@ -1,7 +1,7 @@
-// import java.io.*;
+import java.io.*;
 import java.util.*;
 
-public class dp_coin_change_permutation {
+public class Main {
 
     public static void main(String[] args) throws Exception {
 
@@ -12,14 +12,15 @@ public class dp_coin_change_permutation {
             arr[i] = scn.nextInt();
         }
         int tar = scn.nextInt();
+        int[] dp = new int[tar + 1];
         scn.close();
 
-        int ans = ccc(arr, tar);
+        int ans = ccc(arr, tar, dp);
         System.out.println(ans);
 
     }
 
-    public static int ccc(int[] arr, int tar) {
+    public static int ccc(int[] arr, int tar, int[] dp) {
 
         if (tar <= 0) {
             if (tar == 0) {
@@ -27,12 +28,17 @@ public class dp_coin_change_permutation {
             } else
                 return 0;
         }
+        if (dp[tar] != 0) {
+            return dp[tar];
+        }
 
         int ans = 0;
         for (int i = 0; i < arr.length; i++) {
-            int rres = ccc(arr, tar - arr[i]);
+            int rres = ccc(arr, tar - arr[i], dp);
             ans += rres;
         }
+        dp[tar] = ans;
+
         return ans;
     }
 
