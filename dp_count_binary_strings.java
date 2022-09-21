@@ -31,3 +31,17 @@ public class dp_count_binary_strings {
     }
 
 }
+
+/*
+ * Both equals() method and the == operator are used to compare two objects in
+ * Java. == is an operator and equals() is method. 
+ * 
+ * But == operator compares
+ * reference or memory location of objects in a heap, whether they point to the
+ * same location or not.
+ * 
+ * 
+ * Whenever we create an object using the operator new, it will create a new
+ * memory location for that object. So we use the == operator to check memory
+ * location or address of two objects are the same or not.
+ */
