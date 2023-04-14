@@ -1,0 +1,27 @@
+everything in js happens in a execution context
+JS is a synchronous and single threaded language
+
+global execution context is always at the bottom of the call stack
+
+call stack maintains the order of execution of execution contexts
+
+--------EC creation takes place in 2 steps
+1. creation of memory component also known as the variable component
+memory is assigned to all the variables with undefined stored initially: hoisting??
+functions called in that code are stored as is completely during memory allocation
+
+2. second step is the code execution
+code is executed line by line
+
+-- when a function is invoked
+a new local EC is created for that function and added on top of the call stack
+program execution goes to the invoked function
+in the local EC, again 2 phases are carried out
+
+1. memory allocation to all variables and functions
+2. code execution phases
+
+when return keyword is encountered in the function, the local EC is removed from call stack
+shifting the program control to the function below it, which actually invoked it with the returned value
+
+
