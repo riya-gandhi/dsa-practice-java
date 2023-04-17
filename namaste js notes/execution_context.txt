@@ -24,4 +24,18 @@ in the local EC, again 2 phases are carried out
 when return keyword is encountered in the function, the local EC is removed from call stack
 shifting the program control to the function below it, which actually invoked it with the returned value
 
+-------------------------------------
 
+function ans(){
+    // this declaration will be stored as is on the call stack
+}
+
+var ans => (){
+    // this declaration will be treated as a variable and undefined will be stored in the first 
+    // phase of execution context creation
+}
+
+var ans = function {
+    // this declaration will be treated as a variable and undefined will be stored in the first 
+    // phase of execution context creation
+}
