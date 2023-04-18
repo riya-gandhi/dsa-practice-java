@@ -39,3 +39,16 @@ var ans = function {
     // this declaration will be treated as a variable and undefined will be stored in the first 
     // phase of execution context creation
 }
+
+-------------------------------------------
+
+shortest program: no code in js file
+still
+a Global execution context, Global Object named window in browser, could be diff in nodejs and 
+a *this* ptr is created along with GEC
+
+try to run nocode.js - see window object and this ptr
+
+in global space
+this===window
+-------------------------------------------
