@@ -1,0 +1,31 @@
+public data members vs private data members
+public data members can corrupt the state of a data structure
+
+a mix of public and private data members and functions: strong design principle
+
+----------
+
+constructor is used for *implicit* initialization of object as soon as memory is allocated
+using a different member function can be missed by developer hence constructor used
+
+ctor can be parameterised or not parameterised
+default ctor is called as soon as memory is allocated
+ctor can be OVERLOADED
+----if we donot provide a default ctor, FREE DEFAULT CTOR is provided by cpp compiler
+hence it is always advised to always provide a default ctor
+
+DTOR cannot be OVERLOADED
+dtor called in reverse order of calling of ctor
+
+------------------ object execution lifecycle
+
+memory allocated
+ctor called for obj1
+ctor called for obj2
+code execution
+dtor called for obj2 - memory deallocated
+dtor called for obj1 - memory deallocated
+
+-------------------------------------------------diff between new and malloc
+malloc just allocates memory
+new allocates memory and calls the default ctor
