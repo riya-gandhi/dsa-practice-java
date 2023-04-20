@@ -1,0 +1,19 @@
+function a(){
+    b();
+    function b(){
+        console.log(c); //10
+    }
+}
+
+var c =10;
+
+a();
+
+when execution context is created, a reference to lexical scope of PARENT is also created
+putting a breakpoint on line 4
+we will observe in call stack -
+
+in b's EC, lexical scope of its parent is present ie of a and of global object window
+
+above CHAIN is called SCOPE CHAIN
+and b() is in CLOSURE of a()
