@@ -17,3 +17,16 @@ in b's EC, lexical scope of its parent is present ie of a and of global object w
 
 above CHAIN is called SCOPE CHAIN
 and b() is in CLOSURE of a()
+
+////////////--------------------------
+
+temporal DEAD ZONE? TDZ?
+
+var a;
+let b;
+const c;
+
+variable created from var keyword is stored in global object
+variable created using let and const are stored in diff object (script) in browser also called TDZ
+
+------------------------------------------
