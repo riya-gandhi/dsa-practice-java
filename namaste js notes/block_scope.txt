@@ -1,0 +1,19 @@
+{
+    const a = 10;
+    {
+        const a = 10;
+        {
+            const a = 10;
+            console.log(a);
+        }
+        console.log(a);
+    }
+    console.log(a);
+}
+
+
+try to run with const/var/let to know that var variables are created in global space
+so shadowing them will change actual variable
+undesirable
+
+try shadowing using let and const keywords

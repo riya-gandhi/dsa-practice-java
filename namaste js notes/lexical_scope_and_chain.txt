@@ -30,3 +30,8 @@ variable created from var keyword is stored in global object
 variable created using let and const are stored in diff object (script) in browser also called TDZ
 
 ------------------------------------------
+
+what is block ?
+{
+    statements enclosed within curly open and curly closed
+}
