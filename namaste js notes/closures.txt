@@ -1,0 +1,21 @@
+a function with reference to its lexical scope is known as closure
+
+js can return functions : i suspect smart pointers are used under the hood
+
+function z(){
+    let a=3;
+    function y(){
+        let b=4;
+        function x(){
+            console.log(a);
+            console.log(b);
+        }
+        x();
+    }
+    y();
+}
+z();
+
+js can return functions - its lexical scope is also returned: also called closure
+
+// see the examples
