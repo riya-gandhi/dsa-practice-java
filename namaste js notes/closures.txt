@@ -19,3 +19,6 @@ z();
 js can return functions - its lexical scope is also returned: also called closure
 
 // see the examples
+
+--- see ss 
+
