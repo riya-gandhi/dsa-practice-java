@@ -1,8 +1,18 @@
-for(let i=1;i<=5;i++){
+for(var i=1;i<=5;i++){
     //use settimeout 
 }
 
-this will print 6 five times
+this will print 6 five times because var creates in global space and the refernece is same
+after settimeout timer expires, the refrence i woulda turned 6
 
 // write the explanation
 // vid watched till remaining 8 minutes
+
+using let instead of var will create a new variable space for i evry time loop is run
+
+hence the code will print ith value after ith second
+====================================================================================================
+
+// what if we have to execute above behavior using var only
+
+--
