@@ -1,0 +1,23 @@
+the ability of js functions to be passed as value as argument to another function
+is known as first class functions
+
+in javascript: functions are first class citizens
+
+// function statement
+function z(){
+
+}
+
+// function expression
+var a = function xyz(){
+    ....this is a NAMED func exp
+}
+a() will work
+xyz() will throw reference error
+
+// anonymous function is a function without name: used for function expression but will throw an error
+// if used as a function statement
+
+// remember the diff between function expression and function statement is hoisting
+// temporal dead zone for function expression
+
