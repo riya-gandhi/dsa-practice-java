@@ -1,0 +1,19 @@
+--everything on the call stack is called to be on MAIN THREAD
+--callback functions are called when are supposed to without blocking the main THREAD
+
+setTimeout(function xyz(){
+ console.log("from xyz callback")
+},5000)
+
+console.log("1");
+console.log("2");
+
+output will be 
+1
+2
+from xyz callback
+
+call stack is empty till settimeout timer is running
+after the timer expires, the callback function is pushed onto the callstack and executed
+
+-- async functions should be used whenever they could as they donot block the main THREAD
