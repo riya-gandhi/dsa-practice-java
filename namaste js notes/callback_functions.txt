@@ -17,3 +17,26 @@ call stack is empty till settimeout timer is running
 after the timer expires, the callback function is pushed onto the callstack and executed
 
 -- async functions should be used whenever they could as they donot block the main THREAD
+
+----MAP() FILTER() REDUCE()
+
+const users = [
+    {
+        "first_name":"Riya",
+        "last_name":"Riya",
+        "age":"25",
+    },
+    {
+        "first_name":"Riya2",
+        "last_name":"Riya",
+        "age":"40",
+    },
+    {
+        "first_name":"Riya3",
+        "last_name":"Riya",
+        "age":"20",
+    }
+]
+
+// get first name of all users w age<26 using reduce only
+// output: {"Riya","Riya3"}
