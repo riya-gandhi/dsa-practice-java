@@ -7,15 +7,15 @@ import java.util.Scanner;
 // then optimization
 
 public class k_divisors {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
         scn.close();
 
         ArrayList<Integer> list = new ArrayList<>();
 
-        for(int i=1;i<=n;i++){
-            if(n%i == 0)    {
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
                 list.add(i);
             }
         }
