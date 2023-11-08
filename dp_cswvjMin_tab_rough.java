@@ -1,6 +1,3 @@
-import java.io.*;
-
-import java.io.*;
 import java.util.*;
 
 public class dp_cswvjMin_tab_rough {

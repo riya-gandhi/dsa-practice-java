@@ -10,6 +10,7 @@ public class dp_climb_stairs {
         int[] dp = new int[n + 1];
         int ans = climbStairs(n, dp);
         System.out.println(ans);
+        scn.close();
     }
 
     static int climbStairs(int n, int[] dp) {

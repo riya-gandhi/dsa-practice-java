@@ -41,16 +41,16 @@ public class Comparable_comparator_interface {
 
     public static void main(String[] args){
 
-        Student s1 = new Student("A",100,50,99);
-        Student s2 = new Student("A",100,50,99);
-        Student s3 = new Student("A",100,50,99);
-        Student s4 = new Student("A",100,50,99);
-        Student s5 = new Student("A",100,50,99);
-        Student s6 = new Student("A",100,50,99);
+        // Student s1 = new Student("A",100,50,99);
+        // Student s2 = new Student("A",100,50,99);
+        // Student s3 = new Student("A",100,50,99);
+        // Student s4 = new Student("A",100,50,99);
+        // Student s5 = new Student("A",100,50,99);
+        // Student s6 = new Student("A",100,50,99);
 
-        PriorityQueue<Student> pqheight = new PriorityQueue<>();
-        PriorityQueue<Student> pqWeight = new PriorityQueue<>();
-        PriorityQueue<Student> pqMarks = new PriorityQueue<>();
+        // PriorityQueue<Student> pqheight = new PriorityQueue<>();
+        // PriorityQueue<Student> pqWeight = new PriorityQueue<>();
+        // PriorityQueue<Student> pqMarks = new PriorityQueue<>();
 
         
 

@@ -34,6 +34,7 @@ public class dp_cswmm_tab {
         }
 
         System.out.println(dp[0]);
+        scn.close();
     }
 
 }

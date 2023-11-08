@@ -15,6 +15,7 @@ public class flood_fill_practice {
         }
         boolean[][] visitarr = new boolean[n][m];
         floodfill(arr, 0, 0, "", visitarr);
+        scn.close();
     }
 
     // asf -> answer so far

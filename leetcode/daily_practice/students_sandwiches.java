@@ -8,6 +8,7 @@ class students_sandwiches {
         int[] students = {1,1,0,0};
         int[] sandwiches = {1,1,0,0};
         int ans = countStudents(students, sandwiches);
+        System.out.println(ans);
     }
 
     public static int countStudents(int[] students, int[] sandwiches) {
