@@ -1,5 +1,5 @@
 import java.util.Comparator;
-import java.util.PriorityQueue;
+// import java.util.PriorityQueue;
 
 public class Comparable_comparator_interface {
     static class Student implements Comparable<Student>{

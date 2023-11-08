@@ -39,9 +39,9 @@ public class stack_sliding {
             }
             int[] ans = new int[arr.length];
 
-            for (int i : ans) {
-                i = pq.peek();
-            }
+            // for (int i : ans) {
+            //     i = pq.peek();
+            // }
 
             System.out.println(ans);
         }

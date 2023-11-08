@@ -1,5 +1,5 @@
 import java.util.*;
-import java.io.*;
+// import java.io.*;
 
 public class rough12 {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class rough12 {
         // a>=b and b>1
         scn.close();
 
-        int quotient = 0;
+        // int quotient = 0;
         // int i = a;
 
         // if a = 5
@@ -24,7 +24,7 @@ public class rough12 {
 
         // left, right and terminating
 
-        int x = 0;
+        // int x = 0;
         int left = 1; //err
         int right = a;
         int mid = 0;
@@ -39,7 +39,7 @@ public class rough12 {
         while (left <= right) {
             mid = (left + right) / 2;
             if (b * mid == a) {
-                quotient = mid;
+                // quotient = mid;
                 break;
             } else if (b * mid < a) {
                 left = mid;
