@@ -10,7 +10,8 @@ public class print_subsequence {
         String str = scn.next();
         scn.close();
 
-        printSS(str, "");       //to travel across recursion calls we're using ans variable in the parameters list
+        printSS(str, "");       
+        //to travel across recursion calls we're using ans variable in the parameters list
 
     }
 
