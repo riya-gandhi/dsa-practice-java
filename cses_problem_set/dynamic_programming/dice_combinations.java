@@ -1,4 +1,4 @@
-// package cses_problem_set.dynamic_programming;
+package cses_problem_set.dynamic_programming;
 
 import java.util.Scanner;
 
