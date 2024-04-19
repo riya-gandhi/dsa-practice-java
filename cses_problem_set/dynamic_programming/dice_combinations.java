@@ -25,7 +25,7 @@ public class dice_combinations {
         int sum = dp[0];
 
         for (int i = 1; i <= n; i++) {
-            dp[i] = sum;
+            dp[i] = sum; // wrong here -> correction needed
             sum += dp[i];
         }
         return (dp[n] % MOD);
