@@ -1,3 +1,5 @@
+// Can be done in one loop - fix pending - 
+
 class Solution {
     public static List<List<String>> groupAnagrams(String[] strs) {
 
